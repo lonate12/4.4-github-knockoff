@@ -11,5 +11,5 @@ if(gitHubToken !== undefined){
   });
 }
 
-$.ajax('https://api.github.com/users/lonate12').then(populate);
-$.ajax('https://api.github.com/users/lonate12/repos').then(populate);
+// $.ajax('https://api.github.com/users/lonate12').then(populate);
+// $.ajax('https://api.github.com/users/lonate12/repos').then(populate);

@@ -3,13 +3,60 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>4 4 github knockoff</title>
+    <title>This is not GitHub!</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <div class="outer-div">
+      <div class="inner-div top-nav">
+        <a href="www.github.com" class="logo left"></a>
+        <div class="search-bar left">
+          <form><input type="text" placeholder="Search GitHub"></form>
+        </div>
+        <ul class="top-nav-left left list-inline">
+          <li><a href="#">Pull requests</a></li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Gist</a></li>
+        </ul>
+        <ul class="top-nav-right right list-inline">
+          <li><a href="#">
+            <i class="fa fa-plus" aria-hidden = "true"></i>
+            <i class="fa fa-caret-down" aria-hidden = "true"></i>
+          </a></li>
+          <li>
+            <a href="#" id="small-image"></a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 user-info">
+            <div class="main-info row">
+              <a href="#" class="large-picture"></a>
+              <h2 id="name">Placeholder</h2>
+              <h3 id="login">Placeholder</h3>
+              <a href="#">Add a bio</a>
+              <button>Edit Profile</button>
+            </div>
+            <div class="contact-info col-md-12">
+              <p id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+              <p id="blog"><i class="fa fa-link" aria-hidden="true"></i></p>
+              <p id="joined"><i class="fa fa-clock-o" aria-hidden="true"></i></p>
+            </div>
+            <div class="organizations col-md-12">
+              <h4>Organizations</h4>
+              <a href="#" class="organizations"></a>
+            </div>
+          </div>
+          <div class="col-md-9 repo-info"></div>
 
-    <h1>Let's see what we have here</h1>
+        </div>
+      </div>
 
+
+    <script src="https://use.fontawesome.com/536de10d84.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

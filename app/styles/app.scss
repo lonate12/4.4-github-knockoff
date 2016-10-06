@@ -5,6 +5,16 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+$top-nav-grey: #F5F5F5;
+$top-nav-text: #333333;
+$top-nav-border: #E5E5E5;
+$white: #FFFFFF;
+$light-grey-text: #767682;
+$repo-text-blue: #4078C0;
+$top-green-gradient: #89DC6C;
+$bottom-green-gradient: #61B145;
+$green-border: #5CA941;
+$hover-border-bottom: #C9510C;
 
 *,
 *::before,
@@ -14,4 +24,124 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 img {
   max-width: 100%;
+}
+
+body, a {
+  color: $top-nav-text;
+}
+
+.outer-div {
+  background-color: $top-nav-grey;
+  height: 50px;
+  border-bottom: 1px solid $top-nav-border;
+
+  .inner-div {
+    width: 980px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+
+    ::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .logo {
+      display: block;
+      height: 28px;
+      width: 28px;
+      background-image: url('../images/GitHub-Mark-64px.png');
+      background-size: cover;
+      background-position: center center;
+      margin-right: 10px;
+    }
+
+    .search-bar {
+      padding-top: 2px;
+    }
+
+    input{
+      height: 28px;
+      width: 360px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #C8C8C8;
+      padding-left: 10px;
+      font-weight: 500;
+    }
+
+    .top-nav-left {
+      margin-top: 4px;
+      margin-left: 24px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .top-nav-right {
+    :nth-child(1) {
+      padding-bottom: 3px;
+    }
+
+    :nth-child(2) {
+      padding-top: 5px;
+    }
+
+    #small-image {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-image: url('http://unsplash.it/20/20');
+      background-size: cover;
+      background-position: center center;
+      border-radius: 2px;
+    }
+  }
+}
+
+.container {
+  margin-top: 30px;
+  width: 980px;
+}
+
+.main-info {
+  border-bottom: 1px solid #EEEEEE;
+
+  .large-picture {
+    height: 233px;
+    width: 233px;
+    display: block;
+    background-size: cover;
+    background-position: cover cover;
+    background-image: url('http://unsplash.it/233/233');
+    border-radius: 8px;
+  }
+
+  #name {
+    font-size: 26px;
+  }
+
+  #login {
+    font-size: 20px;
+    color: #666666;
+  }
+
+  button {
+    height: 34px;
+    width: 233px;
+
+  }
 }
