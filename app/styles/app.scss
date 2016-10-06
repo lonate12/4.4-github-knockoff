@@ -76,6 +76,9 @@ body, a {
       margin-left: 24px;
       font-size: 13px;
       font-weight: 500;
+      a {
+      color: $top-nav-text;
+      }
     }
   }
 
@@ -100,6 +103,10 @@ body, a {
       padding-top: 5px;
     }
 
+    a{
+      color: $top-nav-text;
+    }
+
     #small-image {
       display: inline-block;
       height: 20px;
@@ -117,9 +124,6 @@ body, a {
   width: 980px;
 }
 
-.main-info {
-  border-bottom: 1px solid #EEEEEE;
-
   .large-picture {
     height: 233px;
     width: 233px;
@@ -132,16 +136,53 @@ body, a {
 
   #name {
     font-size: 26px;
+    margin-bottom: 6px;
   }
 
   #login {
     font-size: 20px;
     color: #666666;
+    margin-top: 0;
+    font-weight: 200;
+  }
+
+  a {
+    color: #4078C0;
+  }
+
+  .bottom-border {
+    border-bottom: 1px solid #EEEEEE;
+    width: 233px;
   }
 
   button {
+    margin-top: 15px;
+    margin-bottom: 15px;
     height: 34px;
     width: 233px;
-
+    border-radius: 4px;
+    font-weight: bold;
+    background-image: linear-gradient(#FBFBFB, #EEEEEE);
+    border: 1px solid #D5D5D5;
   }
+
+.contact-info {
+
+  i {
+    padding-right: 6px;
+  }
+
+  #email {
+    margin-top: 15px;
+  }
+}
+
+.organizations {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-image: url('http://unsplash.it/35/35');
+  background-size: cover;
+  background-position: center center;
+  border-radius: 2px;
 }
