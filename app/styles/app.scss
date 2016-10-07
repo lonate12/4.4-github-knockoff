@@ -253,6 +253,45 @@ body, a {
   }
 }
 
+.repo-search {
+  width: 723px;
+  padding: 12px 0px 12px 0px;
+  border-bottom: 1px solid #DDDDDD;
+
+  input {
+    width: 360px;
+    height: 34px;
+    border-radius: 4px;
+    padding-left: 8px;
+  }
+
+  .multi-item-button, #new {
+    padding: 6px 12px;
+    height: 34px;
+    border-radius: 4px;
+    background-image: linear-gradient(#FCFCFC, #EEEEEE);
+    border: 1px solid #D5D5D5;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+    width: auto;
+    float: right;
+    :nth-child(1) {
+      color: #828282;
+    }
+  }
+
+  #new {
+    background-image: linear-gradient(#78D757, #61B145);
+    border: 1px solid #5CA941;
+    color: $white;
+  }
+}
+
+.repos-container {
+  width: 723px;
+  
+}
+
 .fixed {
   position: fixed;
   top: 0;
