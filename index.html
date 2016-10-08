@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>This is not GitHub!</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://use.fontawesome.com/536de10d84.js"></script>
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="extended-section-top">
+        <a href="#" class="small-image"></a>
+        <span class="login-name">{{login}}</span>
+      </div>
+      <div class="inner-div top-nav">
+        <a href="www.github.com" class="logo left"></a>
+        <div class="search-bar left">
+          <form><input type="text" placeholder="Search GitHub"></form>
+        </div>
+        <ul class="top-nav-left left list-inline">
+          <li><a href="#">Pull requests</a></li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Gist</a></li>
+        </ul>
+        <ul class="top-nav-right right list-inline">
+          <li><a href="#">
+            <i class="fa fa-plus" aria-hidden = "true"></i>
+            <i class="fa fa-caret-down" aria-hidden = "true"></i>
+          </a></li>
+          <li>
+            <a href="#" class="small-image"></a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 user-info">
+            <div class="main-info row">
+              <a href="#" class="large-picture"></a>
+              <h2 id="name">{{name}}</h2>
+              <h3 id="login">{{login}}</h3>
+              <a href="#">Add a bio</a>
+              <div class="bottom-border">
+                <button>Edit Profile</button>
+              </div>
+            </div>
+            <div class="contact-info row">
+              <p id="email-container">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="#" id="email">{{email}}</a>
+              </p>
+              <p>
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <a href="#" id="blog">{{blog}}</a>
+              </p>
+              <div class="bottom-border">
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <span id="joined"></span>
+                </p>
+              </div>
+            </div>
+            <div class="row" id="orgs-container">
+              <h4>Organizations</h4>
+              <!-- Organization template -->
+            </div>
+          </div>
+          <div class="col-md-9 repo-info">
+            <div class="col-md-12">
+              <div class="repo-nav-container row">
+                <nav>
+                  <a href="#" class="underline-hover">Overview</a>
+                  <a href="#" class="underline-hover">Repositories
+                    <span class="counter" id="repo-number">20</span>
+                  </a>
+                  <a href="#" class="underline-hover">Stars
+                    <span class="counter" id="stars-number">2</span>
+                  </a>
+                  <a href="#" class="underline-hover">Followers
+                    <span class="counter" id="followers-number">1</span>
+                  </a>
+                  <a href="#" class="underline-hover">Following
+                    <span class="counter" id="following-number">1</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+              <div class="col-md-12 repo-search">
+                <input type="text" placeholder="Search repositories..." id="search-repositories">
+                <button id="new"><i class="fa fa-book" aria-hidden ="true"></i>New</button>
+                <button class="multi-item-button">Language: All <i class="fa fa-caret-down" aria-hidden ="true"></i></button>
+                <button class="multi-item-button">Type: All <i class="fa fa-caret-down" aria-hidden ="true"></i></button>
+              </div>
+              <div class="col-md-12 repos-container">
+                <div class="repo" id="repo">
+                <!-- Repos template -->
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script type="text/x-handlebars-template" id="repos-template">
+      <div class="repo-info">
+        <div class="inline left">
+          <a href="{{archive_url}}"><h3>{{name}}</h3></a>
+          <p>{{description}}</p>
+        </div>
+        <div class="inline graph">{{placeholder}}</div>
+        <div class="inline language"><i class="fa fa-circle {{language}}"></i>{{language}}</div>
+        <div class="inline stars"><i class="fa fa-star"></i>{{stargazers_count}}</div>
+      </div>
+    </script>
+    <script type="text/x-handlebars-template" id="orgs-template">
+      <a href="#" class="organizations"></a>
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
