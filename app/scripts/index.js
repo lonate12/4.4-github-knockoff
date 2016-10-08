@@ -50,6 +50,8 @@ function populate(data){
       joinedDateMonth = joinedDateArray[5]+joinedDateArray[6];
 
   // console.log(data);
+  $('.small-image').css('background-image', 'url('+data.avatar_url+')');
+  $('.login-name').text(data.login);
   $('.large-picture').css('background-image', 'url('+data.avatar_url+')');
   $('#name').text(data.name);
   $('#login').text(data.login);
