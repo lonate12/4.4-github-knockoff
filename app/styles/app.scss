@@ -200,7 +200,7 @@ body, a {
     padding-right: 6px;
   }
 
-  #email {
+  #email-container {
     margin-top: 15px;
   }
 
@@ -284,14 +284,90 @@ body, a {
     background-image: linear-gradient(#78D757, #61B145);
     border: 1px solid #5CA941;
     color: $white;
+
+    .fa{
+      padding-right: 4px;
+      color: #FFFFFF;
+    }
   }
 }
 
 .repos-container {
-  width: 723px;
-  
+  padding: 0;
 }
 
+.repo {
+  width: 723px;
+
+  .inline {
+    display: inline-block;
+  }
+
+  .left {
+    p {
+      color: #767676;
+    }
+  }
+}
+
+.repo-info {
+
+  border-bottom: 1px solid #EEEEEE;
+
+  .left {
+    width: 49%;
+    padding: 24px;
+    h3 {
+      margin: 0 0 12px 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .graph {
+    width: 24%;
+    position: relative;
+    top: -38px;
+  }
+
+  .language {
+    width: 16%;
+    position: relative;
+    top: -20%;
+
+    i {
+      padding-right: 3px;
+    }
+  }
+
+  .stars {
+    width: 7.4%;
+    text-align: right;
+    position: relative;
+    top: -20%;
+
+    i{
+      padding-right: 3px;
+    }
+  }
+
+  .fa-circle {
+    color: #FFFFFF;
+  }
+
+  .HTML {
+    color: #E44B23;
+  }
+
+  .CSS {
+    color: #563D7C;
+  }
+
+  .JavaScript {
+    color: #F1E05A;
+  }
+}
 .fixed {
   position: fixed;
   top: 0;

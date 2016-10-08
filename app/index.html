@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>This is not GitHub!</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://use.fontawesome.com/536de10d84.js"></script>
   </head>
   <body>
     <div class="outer-div">
@@ -47,24 +48,24 @@
               </div>
             </div>
             <div class="contact-info row">
-              <p id="email">
+              <p id="email-container">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                <a href="#">{{email}}</a>
+                <a href="#" id="email">{{email}}</a>
               </p>
-              <p id="blog">
+              <p>
                 <i class="fa fa-link" aria-hidden="true"></i>
-                <a href="#">{{blog}}</a>
+                <a href="#" id="blog">{{blog}}</a>
               </p>
               <div class="bottom-border">
-                <p id="joined">
+                <p>
                   <i class="fa fa-clock-o" aria-hidden="true"></i>
-                  <a href="#">Joined on {{date}}</a>
+                  <span id="joined"></span>
                 </p>
               </div>
             </div>
-            <div class="row">
+            <div class="row" id="orgs-container">
               <h4>Organizations</h4>
-              <a href="#" class="organizations"></a>
+              <!-- Organization template -->
             </div>
           </div>
           <div class="col-md-9 repo-info">
@@ -94,14 +95,29 @@
                 <button class="multi-item-button">Type: All <i class="fa fa-caret-down" aria-hidden ="true"></i></button>
               </div>
               <div class="col-md-12 repos-container">
-                
+                <div class="repo" id="repo">
+                <!-- Repos template -->
+                </div>
               </div>
           </div>
         </div>
       </div>
 
 
-    <script src="https://use.fontawesome.com/536de10d84.js"></script>
+    <script type="text/x-handlebars-template" id="repos-template">
+      <div class="repo-info">
+        <div class="inline left">
+          <a href="{{archive_url}}"><h3>{{name}}</h3></a>
+          <p>{{description}}</p>
+        </div>
+        <div class="inline graph">{{placeholder}}</div>
+        <div class="inline language"><i class="fa fa-circle {{language}}"></i>{{language}}</div>
+        <div class="inline stars"><i class="fa fa-star"></i>{{stargazers_count}}</div>
+      </div>
+    </script>
+    <script type="text/x-handlebars-template" id="orgs-template">
+      <a href="#" class="organizations"></a>
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
