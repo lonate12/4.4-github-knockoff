@@ -12,7 +12,7 @@ var gitHubToken = require('./gitapikey.js');
 // }
 
 $.ajax('https://api.github.com/users/lonate12').then(populate);
-$.ajax('https://api.github.com/users/lonate12/repos').then(createRepos);
+$.ajax('https://api.github.com/users/lonate12/repos?sort=pushed').then(createRepos);
 
 $(window).on('scroll', changeToFixed);
 
