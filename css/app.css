@@ -5790,7 +5790,9 @@ body, a {
       background-size: cover;
       background-position: center center; }
   .outer-div .appear {
-    display: block; }
+    display: block;
+    -webkit-transition: display 1;
+    transition: display 1; }
   .outer-div .inner-div {
     width: 980px;
     padding-top: 10px;
@@ -6007,4 +6009,5 @@ button {
 .fixed {
   position: fixed;
   top: 0; }
+
 /*# sourceMappingURL=app.css.map */
