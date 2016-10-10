@@ -58,6 +58,7 @@ function populate(data){
   $('#email').text(data.email);
   $('#email').attr('href', 'mailto:'+data.email);
   $('#blog').text(data.blog);
+  $('#blog').attr('href', data.blog);
   $('#joined').text('Joined on '+ months[joinedDateMonth-1] +' '+joinedDateDay + ', ' + joinedDateYear);
   $('#repo-number').text(data.public_repos);
   $('#followers-number').text(data.followers);
